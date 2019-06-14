@@ -15,6 +15,7 @@ import { ManagementComponent } from './management/management.component';
 import { PostComponent } from './post/post.component';
 import { MatCardModule } from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
+import {LayoutModule} from '@angular/cdk/layout';
 // import { MaterialModule } from './material-module';
 
 @NgModule({
@@ -35,6 +36,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatSidenavModule,
     MatListModule,
     MatCardModule,
+    LayoutModule,
     // MaterialModule
     HttpClientModule
   ],

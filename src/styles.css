@@ -4,9 +4,42 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "~font-awesome/css/font-awesome.css";
 .mat-drawer-backdrop.mat-drawer-shown {
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
 div.mat-bar-wrapper a.mat-list-item {
     color: #f1f1f1 !important;
+}
+
+button:focus {
+    outline: none;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .mat-card-wrapper {
+        height: auto !important;
+    }
+    .mat-card-wrapper .mat-card-title {
+        display: block;
+    }
+    .food-header-wrapper span {
+        top: 16px;
+        left: 53px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .mat-card-wrapper {
+        height: auto !important;
+    }
+    .mat-card-wrapper .mat-card-title {
+        display: block;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .mat-card-wrapper {
+        height: auto !important;
+    }
+    .mat-card-wrapper .mat-card-title {}
 }

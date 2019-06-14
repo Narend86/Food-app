@@ -9,9 +9,14 @@ import { AppService } from '../app.service';
 export class PostComponent implements OnInit {
 
   constructor(public appService: AppService) { }
-
+  allData;
+  date = new Date();
   ngOnInit() {
-    this.appService.sendJson().subscribe(x=>console.log(x))
+    this.appService.sendJson().subscribe(data=>{
+      console.log(data.response)
+      this.allData = data.response;
+      console.log(this.allData)
+    });
   }
 
 }
