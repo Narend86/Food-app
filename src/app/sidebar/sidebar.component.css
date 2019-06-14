@@ -1,0 +1,24 @@
+.mat-sidenav {
+    width: 200px;
+    background-color: #495057;
+}
+
+.mat-sidenav-container {
+    background-color: white !important;
+    height: 91vh;
+}
+
+.mat-sidenav-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-bar-wrapper .mat-icon {
+    color: #e9ecef;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.active-link {
+    background-color: red;
+}

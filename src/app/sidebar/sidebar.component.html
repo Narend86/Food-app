@@ -1,0 +1,35 @@
+<mat-sidenav-container>
+    <mat-sidenav #appDrawer mode="over" opened="false">
+
+        <div class="menu-bar-wrapper">
+            <mat-nav-list class="menu-bar-wrapper">
+
+                <a mat-list-item class="item" routerLink="/" routerLinkActive="active-link" style="color:white">
+                    <mat-icon>av_timer</mat-icon>
+                    Dashboard </a>
+            </mat-nav-list>
+            <mat-nav-list class="menu-bar-wrapper">
+
+                <a mat-list-item class="item" routerLink="/management" routerLinkActive="active-link" style="color:white">
+                    <mat-icon>photo_filter</mat-icon>
+                    Management </a>
+            </mat-nav-list>
+            <mat-nav-list class="menu-bar-wrapper">
+
+                <a mat-list-item class="item" routerLinkActive="active-link" style="color:white">
+                    <mat-icon>photo_filter</mat-icon>
+                    Business </a>
+            </mat-nav-list>
+            <mat-nav-list class="menu-bar-wrapper">
+
+                <a mat-list-item class="item" routerLink="/post" routerLinkActive="active-link" style="color:white">
+                    <mat-icon>av_timer</mat-icon>
+                    Posts </a>
+            </mat-nav-list>
+        </div>
+
+    </mat-sidenav>
+
+    <router-outlet></router-outlet>
+
+</mat-sidenav-container>
